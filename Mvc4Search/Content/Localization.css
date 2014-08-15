@@ -1,0 +1,44 @@
+﻿#Localization-Area
+{
+    height: 36px;
+    width: 144px;
+    background-color:darkcyan;
+    border-radius: 5px;
+    position: relative;
+    left: 44.7%;
+}
+
+#Localization-Countries-Container
+{
+    height:90%;
+    width:97%;
+}
+
+.Localization-Language
+{
+    position:relative;
+    height: 22px;
+    width: 40px;
+    margin-right:4px;
+    top: 6px;
+    left: 6px;
+    float:left;
+}
+
+.Swedish 
+{ 
+    background-color: yellow; 
+    background-image:url('http://www.persasen.se/wordpress/wp-content/themes/organic_nonprofit/images/flags/svensk_flagga.png'); 
+}
+
+.English 
+{ 
+    background-color: red; 
+    background-image:url('http://www.jalgo.org/britain.gif'); 
+}
+
+.French 
+{ 
+    background-color: blue; 
+    background-image:url('http://www.writing-music.com/images/french-flag.gif'); 
+}

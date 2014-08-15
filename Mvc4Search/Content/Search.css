@@ -1,0 +1,51 @@
+﻿body 
+{
+    background-color: darkcyan;
+}
+
+#search-form 
+{
+    margin: 10%;
+    background-color: lightgrey;
+    padding-top: 10px;
+}
+
+#search-section-bottom 
+{
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+#search-header,
+#search-term 
+{
+    position: relative;
+    width: 50%;
+    top: 0px;
+    left: 25%;
+}
+
+#search-header 
+{
+    color: black;
+    text-align: center;
+}
+
+#search-term 
+{
+    border: none;
+}
+
+#result 
+{
+    background-color: lightgreen;
+    border: 1px solid orange;
+    margin-bottom: 6px;
+}
+
+#search-bottom-paging 
+{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}

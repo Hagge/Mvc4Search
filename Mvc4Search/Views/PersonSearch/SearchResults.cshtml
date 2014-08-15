@@ -1,0 +1,16 @@
+﻿@model IEnumerable<Mvc4Search.Models.PersonSearchViewModel>
+
+<section id="search-section-bottom">
+    <div id="search-bottom-results">
+
+        @foreach (var item in Model)
+        {
+            <div id="result">@item.GetFullName()</div>
+        }
+
+    </div>
+    <div id="search-bottom-paging">
+        <a id="search-bottom-paging-previous" href="#">@Mvc4Search.Resources.Resource.Previous_Page</a>
+        <a id="search-bottom-paging-next" href="#">@Mvc4Search.Resources.Resource.Next_Page</a>
+    </div>
+</section>

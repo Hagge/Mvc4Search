@@ -1,0 +1,11 @@
+﻿@{
+    Layout = "~/Views/PersonSearch/_Layout.cshtml";
+}
+
+<form method="get" action="@Url.Action("Search")" id="search-form">
+    @RenderPage("SearchTop.cshtml")
+    @RenderPage("SearchResultsEmpty.cshtml")
+    @RenderPage("Languages.cshtml")
+</form>
+
+@Mvc4Search.Helpers.MyCustomHtmlHelpers.helloHelper()

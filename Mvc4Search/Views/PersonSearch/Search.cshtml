@@ -1,0 +1,10 @@
+﻿@{
+    Layout = "~/Views/PersonSearch/_Layout.cshtml";
+}
+
+@using (Html.BeginForm("Search", "PersonSearch", FormMethod.Get, new { id = "search-form" }))
+{
+    @RenderPage("SearchTop.cshtml")
+    @RenderPage("SearchResults.cshtml")
+    @RenderPage("Languages.cshtml")
+}
