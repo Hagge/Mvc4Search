@@ -14,13 +14,13 @@ namespace Mvc4Search
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.Add(
-                "MyCustomHttpHandler Route", 
-                new Route(
-                    "HandlerTest",
-                    new MyCustomHttpHandlerRouteHandler()
-                )
-            );
+            //routes.Add(
+            //    "MyCustomHttpHandler Route", 
+            //    new Route(
+            //        "HandlerTest",
+            //        new MyCustomHttpHandlerRouteHandler()
+            //    )
+            //);
 
             routes.MapRoute(
                 name: "Default",
