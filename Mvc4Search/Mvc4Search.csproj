@@ -197,7 +197,14 @@
     <Compile Include="HandlersAndModules\MyCustomHttpHandler.cs" />
     <Compile Include="HandlersAndModules\MyCustomHttpModule.cs" />
     <Compile Include="Helpers\MyCustomHtmlHelpers.cs" />
+    <Compile Include="Migrations\201409062040439_MyMigration.cs" />
+    <Compile Include="Migrations\201409062040439_MyMigration.Designer.cs">
+      <DependentUpon>201409062040439_MyMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\LocalPerson.cs" />
+    <Compile Include="Models\LocalPersonModel.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\PersonSearchViewModel.cs" />
     <Compile Include="Models\PersonsModel.cs" />
@@ -353,6 +360,9 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Migrations\201409062040439_MyMigration.resx">
+      <DependentUpon>201409062040439_MyMigration.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\Resource.en-GB.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource.en-GB.Designer.cs</LastGenOutput>

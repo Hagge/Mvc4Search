@@ -13,7 +13,8 @@ namespace Mvc4Search.Controllers
 {
     public class PersonSearchController : Controller
     {
-        PersonsModel db = new PersonsModel();
+        PersonsModel personsDb = new PersonsModel();
+        LocalPersonModel localPersonsDb = new LocalPersonModel();
 
         //[OutputCache(Duration=600)]
         [MyCustomActionFilter("!!!Override!!!")]
@@ -36,7 +37,7 @@ namespace Mvc4Search.Controllers
 
         public ActionResult Search(string term)
         {
-            var linqQuery = from r in db.Person
+            var linqQuery = from r in personsDb.Person
                             where r.FirstName.ToLower().StartsWith(term.ToLower())
                             orderby r.FirstName
                             select new PersonSearchViewModel {
@@ -47,7 +48,7 @@ namespace Mvc4Search.Controllers
             //return View(linqQuery.AsEnumerable());
 
             var lambdaQuery =
-                db.Person
+                personsDb.Person
                     .Where(r => r.FirstName.ToLower().StartsWith(term.ToLower()))
                     .OrderBy(r => r.FirstName)
                     .Take(10)
@@ -58,7 +59,17 @@ namespace Mvc4Search.Controllers
                         }
                     );
 
-            return View(lambdaQuery.AsEnumerable());
+            //return View(lambdaQuery.AsEnumerable());
+
+            var localDbLinqQuery = from r in this.localPersonsDb.Persons
+                            orderby r.FirstName
+                            select new PersonSearchViewModel
+                            {
+                                FirstName = r.FirstName,
+                                LastName = r.LastName
+                            };
+
+            return View(localDbLinqQuery.AsEnumerable());
         }
     }
 }
