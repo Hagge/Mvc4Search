@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc4Search", "Mvc4Search\Mv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc4Search.Tests", "Mvc4Search.Tests\Mvc4Search.Tests.csproj", "{F8E9EF40-C772-4F17-9FB8-33C1A2399E9F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntranetUsingWindowsAuth", "IntranetUsingWindowsAuth\IntranetUsingWindowsAuth.csproj", "{63C1625D-5CD8-4E5F-AA08-BCD54EE0ECCC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F8E9EF40-C772-4F17-9FB8-33C1A2399E9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8E9EF40-C772-4F17-9FB8-33C1A2399E9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8E9EF40-C772-4F17-9FB8-33C1A2399E9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63C1625D-5CD8-4E5F-AA08-BCD54EE0ECCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63C1625D-5CD8-4E5F-AA08-BCD54EE0ECCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63C1625D-5CD8-4E5F-AA08-BCD54EE0ECCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63C1625D-5CD8-4E5F-AA08-BCD54EE0ECCC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
