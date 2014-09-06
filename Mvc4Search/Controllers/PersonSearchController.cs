@@ -15,7 +15,7 @@ namespace Mvc4Search.Controllers
     {
         PersonsModel db = new PersonsModel();
 
-        [OutputCache(Duration=600)]
+        //[OutputCache(Duration=600)]
         [MyCustomActionFilter("!!!Override!!!")]
         public ActionResult Index(string lang)
         {

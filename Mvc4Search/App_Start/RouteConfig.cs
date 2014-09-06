@@ -14,6 +14,10 @@ namespace Mvc4Search
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            routes.IgnoreRoute("{resource}.AnUnexistingImageExtensionThatShouldTriggerTheHttpHandlerRegisteredInWebConfig/{*pathInfo}");
+
+            routes.IgnoreRoute("*AnUnexistingImageExtensionThatShouldTriggerTheHttpHandlerRegisteredInWebConfig*");
+
             //routes.Add(
             //    "MyCustomHttpHandler Route", 
             //    new Route(

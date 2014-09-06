@@ -15,15 +15,16 @@ namespace Mvc4Search.HandlersAndModules
 
         public void ProcessRequest(HttpContext context)
         {
-            context.Response.Write("HttpHandler says hello!");
+            HttpResponse response = context.Response;
+            response.Write("<html><body><p>HttpHandler says hello!</p></body></html>");
         }
     }
 
-    public class MyCustomHttpHandlerRouteHandler : IRouteHandler
-    {
-        public IHttpHandler GetHttpHandler(RequestContext requestContext)
-        {
-            return new MyCustomHttpHandler();
-        }
-    }
+    //public class MyCustomHttpHandlerRouteHandler : IRouteHandler
+    //{
+    //    public IHttpHandler GetHttpHandler(RequestContext requestContext)
+    //    {
+    //        return new MyCustomHttpHandler();
+    //    }
+    //}
 }
